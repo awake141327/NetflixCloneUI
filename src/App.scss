@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Barlow', sans-serif;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.header {
+  background: rgb(10, 10, 10);
+  display:flex;
+  align-items: center;
+  height:80px;
+
+  > img {
+    width: 150px;
+    padding:15px;
+    margin-left:20px;
+  }
+
+  > nav {
+    margin:0 20px;
+    flex-grow: 0.95;
+
+    > a {
+      letter-spacing: 1px;
+      text-decoration: none;
+      color: white;
+      margin:0 3rem;
+      transition: 0.3s;
+      &:hover {
+        color:rgb(170, 170, 170);
+      }
+    }
+  }   
+
+  > svg {
+    color:white;
+    cursor: pointer;
+    transition: 0.3s;
+    &:hover {
+      color:rgb(170, 170, 170);
+      transform: scale(1.2);
+    }
+  }
+}
+
+.banner {
+  height: 600px;
+  background-color: rgb(10, 10, 10);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  box-shadow: 0 0 200px rgba(0,0,0,0.9) inset;
+  display:flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding:80px 70px;
+
+  > h1 {
+    color:white;
+    font-size:4rem;
+    width:50%; 
+    margin-bottom: 10px;
+  }
+
+  > p {
+    color:white;
+    width: 40%;
+    line-height: 1.4;
+    font-size:1rem;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+  }
+
+  > div {
+    display:flex;
+
+    > button {
+      padding:10px 15px;
+      width:100px;
+      background: white;
+      font-weight: 600;
+      border:none;
+      border-radius:5px;
+      margin:20px 20px 0 0;
+      cursor: pointer;
+      outline: none !important;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition:all 0.4s;
+
+      &:hover {
+        background-color: rgb(31, 30, 30);
+        transform: translateY(2px);
+        color:white;
+      }
+
+      > svg {
+        font-size:12px;
+        margin-left:3px;
+      }
+    }
+  }
+}
+
+.row {
+  background: rgb(10, 10, 10);
+  color:white;
+  padding:15px 0;
+
+  > h2 {
+    margin:0 15px;
+    font-weight: 500;
+    font-size:22px;
+  }
+
+  > div {
+    padding:15px;
+    padding-bottom:20px;
+    display:flex;
+    gap:15px;
+    overflow-x: auto;
+
+    > img {
+      width:200px;
+      transition: 1s;
+      cursor: pointer;
+      &:hover {
+        transform: translateY(-5px);
+      }
+    }
+  }
+}
+
+.footer {
+  height:120px;
+  background-color: rgb(10, 10, 10);
+  box-shadow: 0px 0px 10px black;
+  display: flex;
+  justify-content: space-between;
+  padding:0 150px;
+  align-items: center;
+
+  > div {
+    color:white;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+
+    > h2 {
+      font-weight: 600;
+      font-size:1.1rem;
+      margin-bottom: 5px;
+    }
+  }
+}
