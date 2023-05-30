@@ -198,11 +198,25 @@
     }
 
     > div {
-      
       > button {
-        width:65px;
-        padding:6px 8px;
-        font-size:10px;
+        width:60px;
+        padding:5px 7px;
+        font-size:9px;
+      }
+    }
+  }
+
+  .row {
+    padding-top : 15px;
+
+    > h2 {
+      font-size: 16px;
+    }
+
+    > div {
+      padding:10px ;
+      > img {
+        width:100px;
       }
     }
   }
