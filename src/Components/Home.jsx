@@ -70,7 +70,7 @@ export default function Home() {
 
     return (
         <section className="home">
-            <div className="banner" style={{backgroundImage: popularMovies[0]? `url(${backdropUrl}${popularMovies[0].backdrop_path})` : 'none'}}>
+            <div className="banner" style={{backgroundImage: popularMovies[0]? `url(${backdropUrl}${popularMovies[0].backdrop_path})` : 'none', filter: blur(8px)}}>
                 {popularMovies[0] && <h1>{popularMovies[0].original_title}</h1>}
                 {popularMovies[0] && <p>{popularMovies[0].overview}</p>}
                 <div>
