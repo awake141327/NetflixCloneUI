@@ -59,6 +59,7 @@
   position: relative;
   box-shadow: 0 0 200px rgba(0,0,0,0.9) inset;
   display:flex;
+  filter: blur(8px);
   flex-direction: column;
   justify-content: flex-end;
   padding:80px 70px;
