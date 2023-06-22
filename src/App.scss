@@ -64,6 +64,8 @@
   flex-direction: column;
   justify-content: flex-end;
   padding:80px 70px;
+  background: rgb(0,0,0);
+  background: linear-gradient(90deg, rgba(0,0,0,1) 25%, rgba(9,31,157,0) 100%);
 
   > h1 {
     color:white;
